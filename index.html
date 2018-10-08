@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webinar 29-06</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo logo--init js-logo">
+      <img src="img/logo.png" alt="logo">
+    </a>
+    <div class="menu">
+      <div class="menu__item">
+        <a href="#" class="menu__link menu__link--favs js-menu-favs ">Избранное</a>
+
+      </div>
+    </div>
+  </header>
+
+  <form class="form query">
+    <input type="text" class="input">
+    <button type=" submit " class="query__submit">Поиск</button>
+  </form>
+
+  <main class="main">
+    <div class="grid">
+    </div>
+    <button class="load-more query__submit">Показать еще</button>
+    <div class="favorite" style="position: absolute;"></div>
+    <div class="modal modal-hidden js-modal-backdrop">
+      <div class="modal-content">
+        <div class="img-toolbar">
+          <div class="img-tools">
+            <div class="img-tool-nav">
+              
+              <button class="btn btn--tool btn--prev js-prev">&#9013;</button>
+              <button class="btn btn--tool btn--next js-next">&#9013;</button>
+                
+              <button class="btn btn--tool btn--save js-save">&#9733;</button>
+              <button class="btn btn--tool btn--close js-close js-close-modal">&times;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="spinner-overlay">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+
+  <!-- При клике на картинку удаляется класс hidden -->
+  <!-- <div class="hidden backdrop js-backdrop hidden">
+    <div class="modal">
+      Создается на js
+      <div class="img-viewport"><img src="" alt=""></div>
+      <div class="img-toolbar"><img src="" alt=""></div>
+    </div>
+  </div> -->
+
+  <script src="index.js "></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
